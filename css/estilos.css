@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+header img {
+    width: 75px;
+    height: 53px;
+}
+
+header ion-icon {
+    font-size: 20px;
+}
+
+main {
+    padding-top: 106px;
+    padding-bottom: 106px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mensagem {
+    width: 100%;
+    padding: 0 8px;
+
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    
+}
+
+.de-status {
+    background-color: #DCDCDC;  
+}
+
+.publica {
+    background-color: #ffffff;  
+}
+
+.privada {
+    background-color: #FFDEDE;  
+}
+
+.mensagem span {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+
+    padding: 0;
+    
+    word-break: normal;
+}
+
+.horario {
+    font-weight: 400;
+    
+    color: #acacac;
+    
+}
+
+.usuario {
+    font-weight: 700;
+    
+    word-break: normal;
+}
+
+.para-quem strong{
+    font-weight: 700;
+}
+
+.mensagem .horario, .mensagem .usuario, .mensagem .para-quem {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 6px;
+
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    padding: 0 17px;
+
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+}
+
+footer ion-icon {
+    font-size: 20px;
+}
+
+input {
+    width: 80%;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+
+    border: 0;
+    
+    color: #000000;
+}
+input:focus {
+    outline: none;  
+}
+
+input::placeholder {
+    color: #000000;
+} 
+
+.participantes-ativos {
+    width: 100%;
+
+    display: flex;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.lateral-transparente {
+    width: 30%;
+     
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.opções-de-envio {
+    width: 70%;
+
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+.opções-de-envio span {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.escolha-de-contato {
+    height: auto;
+
+}
+
+.titulo {
+    height: 84px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.opcao {
+    height: 36px;
+    padding: 0 18px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.opcao div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.opcao ion-icon {
+    font-size: 15px;
+    color: #28bb25;
+}
+
+.selecionada ion-icon {
+    display: block;
+}
+
+.opcao div ion-icon {
+    font-size: 20px;
+    color: #000000;
+
+    display: block;
+}
+
+.opcao span {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.hidden {
+    display: none;
+}
